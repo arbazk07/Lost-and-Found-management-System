@@ -1,43 +1,48 @@
-# Lost & Found Management System
+# 🔍 Lost & Found Management System
 
-A centralized platform for reporting, finding, and matching lost and found items.
+> A robust C++ console application for tracking and recovering assets in high-traffic environments.
 
-## Project Overview
+## 🚀 Project Overview
+This system is designed to streamline resource recovery in organizations, workplaces, and campuses. Unlike manual logbooks, this application offers a digital, persistent database to match "Lost" reports with "Found" inventory using automated logic.
 
-The Lost & Found Management System is designed to help users report lost items, report found items, and match these items based on criteria like item name, location, and description. This system streamlines the process of returning lost items to their rightful owners.
+It demonstrates core software engineering principles including **Data Persistence**, **Object-Oriented Design**, and **Search Efficiency**.
 
-## Features
+## ⚙️ Technical Highlights
+* **Language:** C++ (Standard 17)
+* **Architecture:** Modular design separating Interface (`.h`) from Implementation (`.cpp`).
+* **Data Persistence:** Custom file-handling engine to store records in CSV format (`data/lost_items.txt`), ensuring data survives system restarts.
+* **Algorithmic Logic:** Implements keyword matching algorithms to automatically suggest potential matches between lost and found datasets.
 
-- **Report Lost Items**: Users can report items they've lost with detailed information.
-- **Report Found Items**: Users can report items they've found with detailed information.
-- **View Items**: Browse through lost and found items in a formatted display.
-- **Match Items**: The system automatically suggests potential matches between lost and found items.
-- **Search Functionality**: Search for specific items by keywords.
-- **Detailed Item View**: View comprehensive details about any item.
+## 🛠️ Key Features
+* **📝 Report Management:** Distinct workflows for logging Lost assets vs. Found inventory.
+* **🔄 Auto-Matching:** System intelligently compares item descriptions and locations to suggest matches.
+* **📂 Persistent Database:** detailed logging of IDs, categories, and descriptions.
+* **🔎 Advanced Search:** Query the database by keywords or Item IDs.
+* **📊 Formatted Display:** Clean console UI for viewing inventory lists.
 
-## Project Structure
+## 📂 Project Structure
+The codebase follows standard industry practices for C++ project organization:
 
-```
+```text
 LostFoundSystem/
-├── include/           # Header files
-│   ├── User.h         # User class definition
-│   ├── Item.h         # Base item class  
-│   ├── LostItem.h     # Lost item class
-│   ├── FoundItem.h    # Found item class
-│   ├── LostFoundSystem.h # Main system class
-│   └── Utilities.h    # Utility functions
-├── src/               # Source files
-│   ├── User.cpp       # User class implementation
-│   ├── Item.cpp       # Base item implementation
-│   ├── LostItem.cpp   # Lost item implementation
-│   ├── FoundItem.cpp  # Found item implementation
-│   ├── LostFoundSystem.cpp # Main system implementation
-│   ├── Utilities.cpp  # Utility functions implementation
-│   └── main.cpp       # Program entry point
-├── data/              # Data storage directory
-│   ├── lost_items.txt # Lost items database
-│   └── found_items.txt # Found items database
-└── CMakeLists.txt     # CMake build configuration
+├── include/           # Header files (Interface)
+│   ├── User.h
+│   ├── Item.h         # Base Class (Polymorphism)
+│   ├── LostItem.h     # Derived Class
+│   ├── FoundItem.h    # Derived Class
+│   ├── LostFoundSystem.h 
+│   └── Utilities.h    
+├── src/               # Source files (Implementation)
+│   ├── User.cpp
+│   ├── Item.cpp
+│   ├── LostItem.cpp
+│   ├── FoundItem.cpp
+│   ├── LostFoundSystem.cpp
+│   └── main.cpp       # Entry Point
+├── data/              # Database
+│   ├── lost_items.txt 
+│   └── found_items.txt 
+└── CMakeLists.txt     # Build Configuration
 ```
 
 ## How to Build
@@ -60,14 +65,15 @@ After building, run the executable:
 ./LostFoundSystem
 ```
 
-## Data Storage
-
-All lost and found items are stored in CSV format in text files located in the `data` directory. The system automatically loads these files on startup and saves new reports to them.
-
-## Future Enhancements
+## 🔮 Future Enhancements
 
 - User authentication system
 - Image upload for lost/found items
 - Web interface
 - Email notifications for potential matches
 - Mobile application 
+- Migrating from local .txt storage to a SQL database.
+
+
+
+Developed by Arbaz | Built with C++ & CMake

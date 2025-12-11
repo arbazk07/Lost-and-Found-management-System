@@ -21,7 +21,7 @@ It demonstrates core software engineering principles including **Data Persistenc
 * **📊 Formatted Display:** Clean console UI for viewing inventory lists.
 
 ## 📂 Project Structure
-The codebase follows standard industry practices for C++ project organization:
+The codebase follows standard practice for C++ project organization:
 
 ```text
 LostFoundSystem/
@@ -76,4 +76,4 @@ After building, run the executable:
 
 
 
-Developed by Arbaz | Built with C++ & CMake
+Developed by Arbaz | Built with C++

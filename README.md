@@ -14,7 +14,7 @@ It demonstrates core software engineering principles including **Data Persistenc
 * **Algorithmic Logic:** Implements keyword matching algorithms to automatically suggest potential matches between lost and found datasets.
 
 ## 🛠️ Key Features
-* **📝 Report Management:** Distinct workflows for logging Lost assets vs. Found inventory.
+* **📝 Report Management:** Distinct workflows for logging Lost assets vs Found inventory.
 * **🔄 Auto-Matching:** System intelligently compares item descriptions and locations to suggest matches.
 * **📂 Persistent Database:** detailed logging of IDs, categories, and descriptions.
 * **🔎 Advanced Search:** Query the database by keywords or Item IDs.

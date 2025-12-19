@@ -8,7 +8,7 @@ This system is designed to streamline resource recovery in organizations, workpl
 It demonstrates core software engineering principles including **Data Persistence**, **Object-Oriented Design**, and **Search Efficiency**.
 
 ## ⚙️ Technical Highlights
-* **Language:** C++ (Standard 17)
+* **Language:** C++
 * **Architecture:** Modular design separating Interface (`.h`) from Implementation (`.cpp`).
 * **Data Persistence:** Custom file-handling engine to store records in CSV format (`data/lost_items.txt`), ensuring data survives system restarts.
 * **Algorithmic Logic:** Implements keyword matching algorithms to automatically suggest potential matches between lost and found datasets.
